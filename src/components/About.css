@@ -1,0 +1,94 @@
+.about-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111827; /* Equivalent to bg-gray-900 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1.5rem;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-content {
+      grid-template-columns: 1fr 1fr; /* Two-column layout on large screens */
+    }
+  }
+  
+  .about-image {
+    width: 100%;
+    height: 24rem;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-text {
+      text-align: left;
+    }
+  }
+  
+  .about-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #3b82f6; /* Equivalent to text-blue-400 */
+  }
+  
+  .about-text p {
+    font-size: 1.125rem;
+    color: #d1d5db; /* Equivalent to text-gray-300 */
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-text .description {
+    color: #9ca3af; /* Equivalent to text-gray-400 */
+  }
+  
+  .about-text .highlight {
+    color: #93c5fd; /* Equivalent to text-blue-300 */
+  }
+  
+  .contact-button {
+    display: inline-block;
+    background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-button:hover {
+    background-color: #16a34a; /* Equivalent to hover:bg-green-600 */
+    transform: scale(1.05);
+  }
+  
+  .footer-container {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  
