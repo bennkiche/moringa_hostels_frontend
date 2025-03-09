@@ -1,0 +1,263 @@
+/* General Styles */
+.booking-form-container {
+  background: linear-gradient(to right, #fb8500, #219ebc);
+}
+
+.booking-form-container h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: black;
+}
+
+.booking-form-container form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 90px;
+  background: linear-gradient(to left, #fb8500, #219ebc);
+}
+
+.booking-form-container div {
+  margin-bottom: 15px;
+}
+
+.booking-form-container .bookingLabel {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.booking-form-container input[type="text"],
+.booking-form-container input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.booking-form-container input:hover {
+  box-shadow: 0 0 10px 2px #fb8500;
+}
+
+.booking-form-container input[type="text"]:read-only {
+  background-color: #f1f1f1;
+}
+
+.booking-form-container p {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.booking-form-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.booking-form-container button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.booking-form-container button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.booking-form-container button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+.booking-form-container button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Booking List Styles */
+.booking-container {
+  max-width: 90%;
+  margin: 20px auto;
+  margin-top: 90px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.no-bookings {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.booking-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Cancel Button */
+.cancel-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.cancel-button:hover {
+  background-color: #cc0000;
+}
+
+/* Disabled Cancelled Button */
+.cancelled-button {
+  background-color: #ffcccc;
+  color: #a00;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+  /* Adjusting the form layout for smaller screens */
+  .booking-form-container form {
+    padding: 15px;
+    margin-top: 60px; /* Adjusting top margin for smaller screens */
+  }
+
+  .booking-form-container h2 {
+    font-size: 22px;
+  }
+
+  .booking-form-container .bookingLabel {
+    font-size: 12px;
+  }
+
+  .booking-form-container input[type="text"],
+  .booking-form-container input[type="datetime-local"] {
+    font-size: 14px; /* Slightly smaller text input size */
+  }
+
+  .booking-form-container button[type="submit"],
+  .booking-form-container button[type="button"] {
+    padding: 8px 16px; /* Smaller buttons for mobile */
+    font-size: 14px;
+  }
+
+  .booking-container {
+    padding: 15px; /* Less padding on mobile */
+    margin-top: 60px;
+  }
+
+  .booking-title {
+    font-size: 20px; /* Smaller title for mobile */
+  }
+
+  .booking-table th, 
+  .booking-table td {
+    padding: 8px; /* Smaller padding for table */
+  }
+
+  /* Ensure table is scrollable on small screens */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  .booking-table {
+    font-size: 14px; /* Smaller table font for mobile */
+  }
+}
+
+/* For Extra Small Devices (Phones under 480px width) */
+@media (max-width: 480px) {
+
+  /* Adjust the form for very small screens */
+  .booking-form-container form {
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .booking-form-container h2 {
+    font-size: 20px;
+  }
+
+  .booking-form-container input[type="text"],
+  .booking-form-container input[type="datetime-local"] {
+    font-size: 12px;
+  }
+
+  .booking-form-container .bookingLabel {
+    font-size: 10px;
+  }
+
+  .booking-form-container button[type="submit"],
+  .booking-form-container button[type="button"] {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .booking-container {
+    padding: 10px;
+  }
+
+  .booking-title {
+    font-size: 18px;
+  }
+
+  .booking-table th, 
+  .booking-table td {
+    padding: 6px; /* Reduce padding further */
+  }
+
+  .booking-table {
+    font-size: 12px; /* Reduce font size even further for small screens */
+  }
+
+  /* Improve button size for small screens */
+  .cancel-button, .cancelled-button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

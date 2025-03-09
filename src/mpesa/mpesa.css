@@ -1,0 +1,70 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  flex-direction: column; 
+  padding: 20px;           
+}
+  /* Title & Subtitle */
+  .title { 
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-weight: bold;
+  }
+  
+  .mpesa-text {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .hyphen {
+    color: red;
+  }
+  
+  /* Form Styling */
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+    background-color: #f0fff0;
+  }
+  
+  /* Pay Button */
+  .pay-button {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .pay-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  

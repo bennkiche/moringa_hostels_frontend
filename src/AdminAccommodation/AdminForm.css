@@ -1,0 +1,63 @@
+.admin-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(to bottom, #219ebc, #fb8500);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.admin-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.admin-input-file {
+    border: none;
+    font-size: 16px;
+}
+
+.uploading-text {
+    color: #ff9800;
+    font-size: 14px;
+}
+
+.preview-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.admin-submit-btn {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-submit-btn:hover {
+    background: #0056b3;
+}
+
+

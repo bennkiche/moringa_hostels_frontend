@@ -1,0 +1,80 @@
+/* Room Container */
+#room-container {
+  /* background: linear-gradient(to bottom, #219ebc, #fb8500); */
+  min-height: 100vh; /* Ensures the background covers the full viewport height */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically when empty */
+  flex-wrap: wrap;
+  padding: 30px;
+}
+ 
+/* Room Card */
+.room-card {
+  background: linear-gradient(to top, #fb8500, #219ebc);
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  max-width: 90%; /* Prevents excessive stretching on smaller screens */
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Room Image */
+.room-image {
+  width: 30%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Room Info */
+.room-info {
+  flex: 1;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Availability Section */
+.room-status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* Book Button */
+.book-btn {
+  background-color: #219ebc;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.book-btn:hover {
+  background: #fb8500;
+  color: white;
+}
+
+/* View More */
+.view-more {
+  color: #023047;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.view-more:hover {
+  color: #fb8500;
+}
